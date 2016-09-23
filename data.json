@@ -1,0 +1,35 @@
+{
+
+    "People":[
+    {
+     "firstName": "John",
+     "lastName": "Smith",
+     "age": 25,
+     "address": 19525,
+     "PhoneNumber":0725698652
+     
+      },
+      {
+	 "firstName": "Kevin",
+     "lastName": "Wambaki",
+     "age": 21,
+     "address": 15256,
+     "PhoneNumber":0725215485
+      }
+
+
+    ],
+    "RECEIPTTYPE":[
+    	{
+    		""
+    	}
+    ],
+    "Items":[
+    	{
+    		"ItemName":"Test Kits",
+    		"Quantity":27,
+    		"Amount":100
+
+    	}
+    ]
+}

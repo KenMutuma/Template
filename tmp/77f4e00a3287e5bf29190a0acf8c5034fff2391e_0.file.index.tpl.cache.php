@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31-dev/29, created on 2016-09-23 11:05:58
+/* Smarty version 3.1.31-dev/29, created on 2016-09-30 11:16:15
   from "C:\xampp\htdocs\Temp\views\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/29',
-  'unifunc' => 'content_57e4f0760d8554_39307304',
+  'unifunc' => 'content_57ee2d5fc3ea54_98554928',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '77f4e00a3287e5bf29190a0acf8c5034fff2391e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Temp\\views\\index.tpl',
-      1 => 1474621551,
+      1 => 1475226937,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57e4f0760d8554_39307304 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57ee2d5fc3ea54_98554928 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xampp\\htdocs\\Temp\\smarty\\libs\\plugins\\modifier.date_format.php';
-$_smarty_tpl->compiled->nocache_hash = '2587657e4f076085a27_27925738';
+$_smarty_tpl->compiled->nocache_hash = '1670157ee2d59e8c315_20817443';
 ?>
 
 <!--<br>
@@ -58,6 +58,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Medbook</title>
   <meta charset="utf-8">
@@ -106,19 +107,50 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
             </thead>
             <tbody>
              <!-- @foreach (($data['data']['charge']) as $charge)-->
+            
+
+
+
+
 	        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['items']->value, 'Item');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['items']->value, 'Qaz', false, 'Id');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['Item']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['Id']->value => $_smarty_tpl->tpl_vars['Qaz']->value) {
 ?>
+
+
             
               <tr style="color: red" >
-                <td><?php echo $_smarty_tpl->tpl_vars['Item']->value;?>
-</td>
+               <td>
+                 <?php echo $_smarty_tpl->tpl_vars['Id']->value;?>
+ 
+
+                
+                  <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Qaz']->value, 'desc', false, 'data');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['data']->value => $_smarty_tpl->tpl_vars['desc']->value) {
+?>
+                    <tr style="color: red" >
+                     <td>
+
+                      <?php echo $_smarty_tpl->tpl_vars['desc']->value;?>
+
+
+                     </td>
+                     
+                     </tr>
+                  <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
+
+               </td>
                
-               
-              </tr>
-             <!-- @endforeach-->
+               </tr>
+             
              <?php
 }
 }

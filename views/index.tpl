@@ -21,6 +21,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Medbook</title>
   <meta charset="utf-8">
@@ -67,14 +68,26 @@
             </thead>
             <tbody>
              <!-- @foreach (($data['data']['charge']) as $charge)-->
-	        {foreach from =$items  item=Item}
             
-              <tr style="color: red" >
-                <td>{$Item}</td>
+
+
+
+
+	        {foreach from=$items  item=Qaz }
+               <tr style="color: red" >
+        
+
+            {foreach from=$Qaz[2]  item=Desc }
+            
+              
+               <td>
+   
                
+                   {$Desc} 
                
-              </tr>
-             <!-- @endforeach-->
+               </td>
+               {/foreach}
+             </tr>
              {/foreach}
               <tr style="color: red">
                 <td colspan="2"><strong>Total </strong></td>

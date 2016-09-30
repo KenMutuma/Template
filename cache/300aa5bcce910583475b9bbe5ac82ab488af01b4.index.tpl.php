@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 3.1.31-dev/29, created on 2016-09-23 14:06:37
+/* Smarty version 3.1.31-dev/29, created on 2016-09-30 11:09:47
   from "C:\xampp\htdocs\Temp\views\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/29',
-  'unifunc' => 'content_57e51acd0c5278_31781632',
+  'unifunc' => 'content_57ee2bdbe52e82_35679338',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '77f4e00a3287e5bf29190a0acf8c5034fff2391e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Temp\\views\\index.tpl',
-      1 => 1474621551,
+      1 => 1475226586,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 3600,
 ),true)) {
-function content_57e51acd0c5278_31781632 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57ee2bdbe52e82_35679338 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <!--<br>
@@ -31,25 +31,18 @@ function content_57e51acd0c5278_31781632 (Smarty_Internal_Template $_smarty_tpl)
 		</tr>
 	</thead>
 	<tbody>
-			<tr>
-			<td>Jesse</td>
-			<td >25</td>
-		</tr>
-				<tr>
-			<td>Joey</td>
-			<td >26</td>
-		</tr>
-				<tr>
-			<td>Benja</td>
-			<td >62</td>
-		</tr>
-		
+	<br />
+<b>Notice</b>:  Undefined index: people in <b>C:\xampp\htdocs\Temp\tmp\77f4e00a3287e5bf29190a0acf8c5034fff2391e_0.file.index.tpl.cache.php</b> on line <b>39</b><br />
+<br />
+<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\Temp\tmp\77f4e00a3287e5bf29190a0acf8c5034fff2391e_0.file.index.tpl.cache.php</b> on line <b>39</b><br />
+
 	</tbody>
 </table>-->
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Medbook</title>
   <meta charset="utf-8">
@@ -80,7 +73,7 @@ function content_57e51acd0c5278_31781632 (Smarty_Internal_Template $_smarty_tpl)
       </p>    
       <p layout="row" flex class="bill-alt-color">
         <span flex="45" layout="row" layout-align="start end" style="color: green">
-          Date: Sep 23, 2016</span>
+          Date: Sep 30, 2016</span>
           <span flex="50" layout="row" layout-align="end" class="pull-right">
             <span style="color: green">No. <strong class="bill-type" style="color: red">
              </strong></span>
@@ -96,27 +89,37 @@ function content_57e51acd0c5278_31781632 (Smarty_Internal_Template $_smarty_tpl)
             </thead>
             <tbody>
              <!-- @foreach (($data['data']['charge']) as $charge)-->
-	                    
+            
+
+
+
+
+	        
+
+            
               <tr style="color: red" >
-                <td>Gloves</td>
+               <td>
+                 items 
+
+                 
+
+
+                 
+
+
+                                    <li><br />
+<b>Warning</b>:  Illegal string offset 'ItemName' in <b>C:\xampp\htdocs\Temp\tmp\77f4e00a3287e5bf29190a0acf8c5034fff2391e_0.file.index.tpl.cache.php</b> on line <b>139</b><br />
+I</li>
+                
+
+
+
+
+
+               </td>
                
-               
-              </tr>
-             <!-- @endforeach-->
-                         
-              <tr style="color: red" >
-                <td>10</td>
-               
-               
-              </tr>
-             <!-- @endforeach-->
-                         
-              <tr style="color: red" >
-                <td>100</td>
-               
-               
-              </tr>
-             <!-- @endforeach-->
+               </tr>
+             
              
               <tr style="color: red">
                 <td colspan="2"><strong>Total </strong></td>

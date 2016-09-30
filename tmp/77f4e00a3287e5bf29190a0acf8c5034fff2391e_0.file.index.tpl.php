@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31-dev/29, created on 2016-09-23 09:59:30
+/* Smarty version 3.1.31-dev/29, created on 2016-09-30 11:43:23
   from "C:\xampp\htdocs\Temp\views\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31-dev/29',
-  'unifunc' => 'content_57e4e0e281b4e5_78483599',
+  'unifunc' => 'content_57ee33bb1f1712_93050879',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '77f4e00a3287e5bf29190a0acf8c5034fff2391e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Temp\\views\\index.tpl',
-      1 => 1474617556,
+      1 => 1475228601,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57e4e0e281b4e5_78483599 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57ee33bb1f1712_93050879 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xampp\\htdocs\\Temp\\smarty\\libs\\plugins\\modifier.date_format.php';
 ?>
 
@@ -57,6 +57,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Medbook</title>
   <meta charset="utf-8">
@@ -98,38 +99,56 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
           <table class="table table-bordered">
             <thead>
               <tr style="color: red">
-                <th>Being payment of:</th>
-                <th>Units</th>
+                <th>Being payment of:</th></br>
+                <th>Units</th></br>
                 <th>Amount</th>
               </tr>
             </thead>
             <tbody>
-             <!-- @foreach (($data['data']['charge']) as $charge)
-              <tr style="color: red" >
-                <td><?php ob_start();
-echo $_smarty_tpl->tpl_vars['charge']->value['particular'];
-$_prefixVariable1=ob_get_clean();
-echo $_prefixVariable1;?>
-</td>
-                <td><?php ob_start();
-echo $_smarty_tpl->tpl_vars['charge']->value['items_traded'];
-$_prefixVariable2=ob_get_clean();
-echo $_prefixVariable2;?>
-</td>
-                <td><?php ob_start();
-echo $_smarty_tpl->tpl_vars['charge']->value['amount'];
-$_prefixVariable3=ob_get_clean();
-echo $_prefixVariable3;?>
-</td>
-              </tr>
-              @endforeach-->
+             <!-- @foreach (($data['data']['charge']) as $charge)-->
+            
+
+
+
+
+	        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['items']->value, 'Qaz');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['Qaz']->value) {
+?>
+               <tr style="color: red" >
+        
+
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Qaz']->value[2], 'Desc');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['Desc']->value) {
+?>
+            
+              
+               <td>
+   
+               
+                   <?php echo $_smarty_tpl->tpl_vars['Desc']->value;?>
+ 
+               
+               </td>
+               <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
+             </tr>
+             <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
               <tr style="color: red">
                 <td colspan="2"><strong>Total </strong></td>
-                <td style="text-align:right;min-width:100px;"><strong><!--<?php ob_start();
-echo $_smarty_tpl->tpl_vars['data']->value['data']['total'];
-$_prefixVariable4=ob_get_clean();
-echo $_prefixVariable4;?>
---></strong></td>
+                <td style="text-align:right;min-width:100px;"><strong>1000</strong></td>
               </tr>
             </tbody>
           </table>
@@ -137,11 +156,7 @@ echo $_prefixVariable4;?>
           <div layout="column"  style="color: green">
             <div layout="row" flex layout-align="start start" class="md-padding">
               <div flex="60">Received by</div>
-              <div flex offset="10"><u><strong><!--<?php ob_start();
-echo $_smarty_tpl->tpl_vars['data']->value['data']['total'];
-$_prefixVariable5=ob_get_clean();
-echo $_prefixVariable5;?>
---></strong></u></div>
+              <div flex offset="10"><u><strong>Ken Total Ksh 1000</strong></u></div>
             </div>
             <div layout="row" layout-align="end end" flex>
               <div flex="35" offset="25">Name/Sign</div>
